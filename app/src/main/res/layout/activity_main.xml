@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#20ECEFF1"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/Campo"
+        android:layout_width="406dp"
+        android:layout_height="406dp"
+        android:layout_marginBottom="120dp"
+        android:gravity="bottom|top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TableRow
+            android:id="@+id/primeraFila"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/A1"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null"/>
+
+            <Button
+                android:id="@+id/B1"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/C1"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/D1"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/E1"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/F1"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/G1"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/segundaFila"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/A2"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/B2"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/C2"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/D2"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/E2"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/F2"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/G2"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TerceraFila"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/A3"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/B3"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/C3"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/D3"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/E3"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/F3"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/G3"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/cuartaFila"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/A4"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/B4"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/C4"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/D4"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/E4"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/F4"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/G4"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/quintaFila"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/A5"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/B5"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/C5"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/D5"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/E5"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/F5"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/G5"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/sextaFila"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/A6"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/B6"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/C6"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/D6"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/E6"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/F6"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/G6"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/septimaFIla"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/A7"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/B7"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/C7"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/D7"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/E7"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/F7"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/G7"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:background="@drawable/imageview_borde"
+                app:backgroundTint="@null" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/piezaBarco"
+        android:layout_width="199dp"
+        android:layout_height="62dp"
+        android:src="@drawable/morado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
