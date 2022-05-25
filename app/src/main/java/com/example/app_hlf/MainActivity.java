@@ -3,9 +3,11 @@ package com.example.app_hlf;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.ClipData;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.DragEvent;
 import android.view.MotionEvent;
 import android.view.View;
@@ -32,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     int contElegirPieza = 0;
     boolean barcoElegido = false;
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -694,10 +697,17 @@ public class MainActivity extends AppCompatActivity {
                 final int action = event.getAction();
                 switch (action) {
                     case DragEvent.ACTION_DRAG_ENTERED:
-                        A4 = true;
+                        if(barcoElegido)
+                        {
+                            A4 = true;
+                        }
+                        else
+                        {
+                            A4 = false;
+                        }
                         break;
                     case DragEvent.ACTION_DROP:
-                        if(A4) {
+                        if(A4 && barcoElegido) {
                             recogePiezaA4.setBackgroundResource(R.drawable.imageview_pieza);
                         }
                         break;
@@ -715,10 +725,17 @@ public class MainActivity extends AppCompatActivity {
                 final int action = event.getAction();
                 switch (action) {
                     case DragEvent.ACTION_DRAG_ENTERED:
-                        B4 = true;
+                        if(barcoElegido)
+                        {
+                            B4 = true;
+                        }
+                        else
+                        {
+                            B4 = false;
+                        }
                         break;
                     case DragEvent.ACTION_DROP:
-                        if(B4) {
+                        if(B4 && barcoElegido) {
                             recogePiezaB4.setBackgroundResource(R.drawable.imageview_pieza);
                         }
                         break;
@@ -736,10 +753,17 @@ public class MainActivity extends AppCompatActivity {
                 final int action = event.getAction();
                 switch (action) {
                     case DragEvent.ACTION_DRAG_ENTERED:
-                        C4 = true;
+                        if(barcoElegido)
+                        {
+                            C4 = true;
+                        }
+                        else
+                        {
+                            C4 = false;
+                        }
                         break;
                     case DragEvent.ACTION_DROP:
-                        if(C4) {
+                        if(C4 && barcoElegido) {
                             recogePiezaC4.setBackgroundResource(R.drawable.imageview_pieza);
                         }
                         break;
@@ -757,10 +781,17 @@ public class MainActivity extends AppCompatActivity {
                 final int action = event.getAction();
                 switch (action) {
                     case DragEvent.ACTION_DRAG_ENTERED:
-                        D4 = true;
+                        if(barcoElegido)
+                        {
+                            D4 = true;
+                        }
+                        else
+                        {
+                            D4 = false;
+                        }
                         break;
                     case DragEvent.ACTION_DROP:
-                        if(D4) {
+                        if(D4 && barcoElegido) {
                             recogePiezaD4.setBackgroundResource(R.drawable.imageview_pieza);
                         }
                         break;
@@ -778,10 +809,17 @@ public class MainActivity extends AppCompatActivity {
                 final int action = event.getAction();
                 switch (action) {
                     case DragEvent.ACTION_DRAG_ENTERED:
-                        E4 = true;
+                        if(barcoElegido)
+                        {
+                            E4 = true;
+                        }
+                        else
+                        {
+                            E4 = false;
+                        }
                         break;
                     case DragEvent.ACTION_DROP:
-                        if(E4) {
+                        if(E4 && barcoElegido) {
                             recogePiezaE4.setBackgroundResource(R.drawable.imageview_pieza);
                         }
                         break;
@@ -799,10 +837,17 @@ public class MainActivity extends AppCompatActivity {
                 final int action = event.getAction();
                 switch (action) {
                     case DragEvent.ACTION_DRAG_ENTERED:
-                        F4 = true;
+                        if(barcoElegido)
+                        {
+                            F4 = true;
+                        }
+                        else
+                        {
+                            F4 = false;
+                        }
                         break;
                     case DragEvent.ACTION_DROP:
-                        if(F4) {
+                        if(F4 && barcoElegido) {
                             recogePiezaF4.setBackgroundResource(R.drawable.imageview_pieza);
                         }
                         break;
@@ -820,10 +865,17 @@ public class MainActivity extends AppCompatActivity {
                 final int action = event.getAction();
                 switch (action) {
                     case DragEvent.ACTION_DRAG_ENTERED:
-                        G4 = true;
+                        if(barcoElegido)
+                        {
+                            G4 = true;
+                        }
+                        else
+                        {
+                            G4 = false;
+                        }
                         break;
                     case DragEvent.ACTION_DROP:
-                        if(G4) {
+                        if(G4 && barcoElegido) {
                             recogePiezaG4.setBackgroundResource(R.drawable.imageview_pieza);
                         }
                         break;
@@ -841,10 +893,17 @@ public class MainActivity extends AppCompatActivity {
                 final int action = event.getAction();
                 switch (action) {
                     case DragEvent.ACTION_DRAG_ENTERED:
-                        A5 = true;
+                        if(barcoElegido)
+                        {
+                            A5 = true;
+                        }
+                        else
+                        {
+                            A5 = false;
+                        }
                         break;
                     case DragEvent.ACTION_DROP:
-                        if(A5) {
+                        if(A5 && barcoElegido) {
                             recogePiezaA5.setBackgroundResource(R.drawable.imageview_pieza);
                         }
                         break;
@@ -862,10 +921,17 @@ public class MainActivity extends AppCompatActivity {
                 final int action = event.getAction();
                 switch (action) {
                     case DragEvent.ACTION_DRAG_ENTERED:
-                        B5 = true;
+                        if(barcoElegido)
+                        {
+                            B5 = true;
+                        }
+                        else
+                        {
+                            B5 = false;
+                        }
                         break;
                     case DragEvent.ACTION_DROP:
-                        if(B5) {
+                        if(B5 && barcoElegido) {
                             recogePiezaB5.setBackgroundResource(R.drawable.imageview_pieza);
                         }
                         break;
@@ -883,10 +949,17 @@ public class MainActivity extends AppCompatActivity {
                 final int action = event.getAction();
                 switch (action) {
                     case DragEvent.ACTION_DRAG_ENTERED:
-                        C5 = true;
+                        if(barcoElegido)
+                        {
+                            C5 = true;
+                        }
+                        else
+                        {
+                            C5 = false;
+                        }
                         break;
                     case DragEvent.ACTION_DROP:
-                        if(C5) {
+                        if(C5 && barcoElegido) {
                             recogePiezaC5.setBackgroundResource(R.drawable.imageview_pieza);
                         }
                         break;
@@ -904,10 +977,17 @@ public class MainActivity extends AppCompatActivity {
                 final int action = event.getAction();
                 switch (action) {
                     case DragEvent.ACTION_DRAG_ENTERED:
-                        D5 = true;
+                        if(barcoElegido)
+                        {
+                            D5 = true;
+                        }
+                        else
+                        {
+                            D5 = false;
+                        }
                         break;
                     case DragEvent.ACTION_DROP:
-                        if(D5) {
+                        if(D5 && barcoElegido) {
                             recogePiezaD5.setBackgroundResource(R.drawable.imageview_pieza);
                         }
                         break;
@@ -925,11 +1005,18 @@ public class MainActivity extends AppCompatActivity {
                 final int action = event.getAction();
                 switch (action) {
                     case DragEvent.ACTION_DRAG_ENTERED:
-                        E5 = true;
+                        if(barcoElegido)
+                        {
+                            E5 = true;
+                        }
+                        else
+                        {
+                            E5 = false;
+                        }
                         break;
                     case DragEvent.ACTION_DROP:
-                        if(E5) {
-                            recogePiezaE4.setBackgroundResource(R.drawable.imageview_pieza);
+                        if(E5 && barcoElegido) {
+                            recogePiezaE5.setBackgroundResource(R.drawable.imageview_pieza);
                         }
                         break;
                     default:
@@ -946,10 +1033,17 @@ public class MainActivity extends AppCompatActivity {
                 final int action = event.getAction();
                 switch (action) {
                     case DragEvent.ACTION_DRAG_ENTERED:
-                        F5 = true;
+                        if(barcoElegido)
+                        {
+                            F5 = true;
+                        }
+                        else
+                        {
+                            F5 = false;
+                        }
                         break;
                     case DragEvent.ACTION_DROP:
-                        if(F5) {
+                        if(F5 && barcoElegido) {
                             recogePiezaF5.setBackgroundResource(R.drawable.imageview_pieza);
                         }
                         break;
@@ -967,10 +1061,17 @@ public class MainActivity extends AppCompatActivity {
                 final int action = event.getAction();
                 switch (action) {
                     case DragEvent.ACTION_DRAG_ENTERED:
-                        G5 = true;
+                        if(barcoElegido)
+                        {
+                            G5 = true;
+                        }
+                        else
+                        {
+                            G5 = false;
+                        }
                         break;
                     case DragEvent.ACTION_DROP:
-                        if(G5) {
+                        if(G5 && barcoElegido) {
                             recogePiezaG5.setBackgroundResource(R.drawable.imageview_pieza);
                         }
                         break;
@@ -988,10 +1089,17 @@ public class MainActivity extends AppCompatActivity {
                 final int action = event.getAction();
                 switch (action) {
                     case DragEvent.ACTION_DRAG_ENTERED:
-                        A6 = true;
+                        if(barcoElegido)
+                        {
+                            A6 = true;
+                        }
+                        else
+                        {
+                            A6 = false;
+                        }
                         break;
                     case DragEvent.ACTION_DROP:
-                        if(A6) {
+                        if(A6 && barcoElegido) {
                             recogePiezaA6.setBackgroundResource(R.drawable.imageview_pieza);
                         }
                         break;
@@ -1009,10 +1117,17 @@ public class MainActivity extends AppCompatActivity {
                 final int action = event.getAction();
                 switch (action) {
                     case DragEvent.ACTION_DRAG_ENTERED:
-                        B6 = true;
+                        if(barcoElegido)
+                        {
+                            B6 = true;
+                        }
+                        else
+                        {
+                            B6 = false;
+                        }
                         break;
                     case DragEvent.ACTION_DROP:
-                        if(B6) {
+                        if(B6 && barcoElegido) {
                             recogePiezaB6.setBackgroundResource(R.drawable.imageview_pieza);
                         }
                         break;
@@ -1030,10 +1145,17 @@ public class MainActivity extends AppCompatActivity {
                 final int action = event.getAction();
                 switch (action) {
                     case DragEvent.ACTION_DRAG_ENTERED:
-                        C6 = true;
+                        if(barcoElegido)
+                        {
+                            C6 = true;
+                        }
+                        else
+                        {
+                            C6 = false;
+                        }
                         break;
                     case DragEvent.ACTION_DROP:
-                        if(C6) {
+                        if(C6 && barcoElegido) {
                             recogePiezaC6.setBackgroundResource(R.drawable.imageview_pieza);
                         }
                         break;
@@ -1051,10 +1173,17 @@ public class MainActivity extends AppCompatActivity {
                 final int action = event.getAction();
                 switch (action) {
                     case DragEvent.ACTION_DRAG_ENTERED:
-                        D6 = true;
+                        if(barcoElegido)
+                        {
+                            D6 = true;
+                        }
+                        else
+                        {
+                            D6 = false;
+                        }
                         break;
                     case DragEvent.ACTION_DROP:
-                        if(D6) {
+                        if(D6 && barcoElegido) {
                             recogePiezaD6.setBackgroundResource(R.drawable.imageview_pieza);
                         }
                         break;
@@ -1072,10 +1201,17 @@ public class MainActivity extends AppCompatActivity {
                 final int action = event.getAction();
                 switch (action) {
                     case DragEvent.ACTION_DRAG_ENTERED:
-                        E6 = true;
+                        if(barcoElegido)
+                        {
+                            E6 = true;
+                        }
+                        else
+                        {
+                            E6 = false;
+                        }
                         break;
                     case DragEvent.ACTION_DROP:
-                        if(E6) {
+                        if(E6 && barcoElegido) {
                             recogePiezaE6.setBackgroundResource(R.drawable.imageview_pieza);
                         }
                         break;
@@ -1093,10 +1229,17 @@ public class MainActivity extends AppCompatActivity {
                 final int action = event.getAction();
                 switch (action) {
                     case DragEvent.ACTION_DRAG_ENTERED:
-                        F6 = true;
+                        if(barcoElegido)
+                        {
+                            F6 = true;
+                        }
+                        else
+                        {
+                            F6 = false;
+                        }
                         break;
                     case DragEvent.ACTION_DROP:
-                        if(F6) {
+                        if(F6 && barcoElegido) {
                             recogePiezaF6.setBackgroundResource(R.drawable.imageview_pieza);
                         }
                         break;
@@ -1114,10 +1257,17 @@ public class MainActivity extends AppCompatActivity {
                 final int action = event.getAction();
                 switch (action) {
                     case DragEvent.ACTION_DRAG_ENTERED:
-                        G6 = true;
+                        if(barcoElegido)
+                        {
+                            G6 = true;
+                        }
+                        else
+                        {
+                            G6 = false;
+                        }
                         break;
                     case DragEvent.ACTION_DROP:
-                        if(G6) {
+                        if(G6 && barcoElegido) {
                             recogePiezaG6.setBackgroundResource(R.drawable.imageview_pieza);
                         }
                         break;
@@ -1135,10 +1285,17 @@ public class MainActivity extends AppCompatActivity {
                 final int action = event.getAction();
                 switch (action) {
                     case DragEvent.ACTION_DRAG_ENTERED:
-                        A7 = true;
+                        if(barcoElegido)
+                        {
+                            A7 = true;
+                        }
+                        else
+                        {
+                            A7 = false;
+                        }
                         break;
                     case DragEvent.ACTION_DROP:
-                        if(A7) {
+                        if(A7 && barcoElegido) {
                             recogePiezaA7.setBackgroundResource(R.drawable.imageview_pieza);
                         }
                         break;
@@ -1156,10 +1313,17 @@ public class MainActivity extends AppCompatActivity {
                 final int action = event.getAction();
                 switch (action) {
                     case DragEvent.ACTION_DRAG_ENTERED:
-                        B7 = true;
+                        if(barcoElegido)
+                        {
+                            B7 = true;
+                        }
+                        else
+                        {
+                            B7 = false;
+                        }
                         break;
                     case DragEvent.ACTION_DROP:
-                        if(B7) {
+                        if(B7 && barcoElegido) {
                             recogePiezaB7.setBackgroundResource(R.drawable.imageview_pieza);
                         }
                         break;
@@ -1177,10 +1341,17 @@ public class MainActivity extends AppCompatActivity {
                 final int action = event.getAction();
                 switch (action) {
                     case DragEvent.ACTION_DRAG_ENTERED:
-                        C7 = true;
+                        if(barcoElegido)
+                        {
+                            C7 = true;
+                        }
+                        else
+                        {
+                            C7 = false;
+                        }
                         break;
                     case DragEvent.ACTION_DROP:
-                        if(C7) {
+                        if(C7 && barcoElegido) {
                             recogePiezaC7.setBackgroundResource(R.drawable.imageview_pieza);
                         }
                         break;
@@ -1198,10 +1369,17 @@ public class MainActivity extends AppCompatActivity {
                 final int action = event.getAction();
                 switch (action) {
                     case DragEvent.ACTION_DRAG_ENTERED:
-                        D7 = true;
+                        if(barcoElegido)
+                        {
+                            D7 = true;
+                        }
+                        else
+                        {
+                            D7 = false;
+                        }
                         break;
                     case DragEvent.ACTION_DROP:
-                        if(D7) {
+                        if(D7 && barcoElegido) {
                             recogePiezaD7.setBackgroundResource(R.drawable.imageview_pieza);
                         }
                         break;
@@ -1219,10 +1397,17 @@ public class MainActivity extends AppCompatActivity {
                 final int action = event.getAction();
                 switch (action) {
                     case DragEvent.ACTION_DRAG_ENTERED:
-                        E7 = true;
+                        if(barcoElegido)
+                        {
+                            E7 = true;
+                        }
+                        else
+                        {
+                            E7 = false;
+                        }
                         break;
                     case DragEvent.ACTION_DROP:
-                        if(E7) {
+                        if(E7 && barcoElegido) {
                             recogePiezaE7.setBackgroundResource(R.drawable.imageview_pieza);
                         }
                         break;
@@ -1240,10 +1425,17 @@ public class MainActivity extends AppCompatActivity {
                 final int action = event.getAction();
                 switch (action) {
                     case DragEvent.ACTION_DRAG_ENTERED:
-                        F7 = true;
+                        if(barcoElegido)
+                        {
+                            F7 = true;
+                        }
+                        else
+                        {
+                            F7 = false;
+                        }
                         break;
                     case DragEvent.ACTION_DROP:
-                        if(F7) {
+                        if(F7 && barcoElegido) {
                             recogePiezaF7.setBackgroundResource(R.drawable.imageview_pieza);
                         }
                         break;
@@ -1261,10 +1453,17 @@ public class MainActivity extends AppCompatActivity {
                 final int action = event.getAction();
                 switch (action) {
                     case DragEvent.ACTION_DRAG_ENTERED:
-                        G7 = true;
+                        if(barcoElegido)
+                        {
+                            G7 = true;
+                        }
+                        else
+                        {
+                            G7 = false;
+                        }
                         break;
                     case DragEvent.ACTION_DROP:
-                        if(G7) {
+                        if(G7 && barcoElegido) {
                             recogePiezaG7.setBackgroundResource(R.drawable.imageview_pieza);
                         }
                         break;
@@ -1293,21 +1492,49 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
+        piezaM.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {}
+        });
         piezaM.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 barcoElegido = false;
-                ClipData datos = ClipData.newPlainText("","");
+                ClipData datos = ClipData.newPlainText("", "");
                 View.DragShadowBuilder shadow = new View.DragShadowBuilder(piezaM);
-                v.startDrag(datos,shadow,null,0);
-                return false;
+                v.startDrag(datos, shadow, null, 0);
+                shadow.getView();
+                final int X;
+                final int Y;
+                int _xDelta = 0;
+                int _yDelta = 0;
+                int xDelta = 0;
+                int yDelta = 0;
+                int xmio = 0;
+
+                /*if(event.getAction() != MotionEvent.ACTION_UP){
+                    X = (int) event.getRawX();
+                    Y = (int) event.getRawY();
+                    Log.i("TAG", "fin: (" + X + ", " + Y + ")");
+                }*/
+
+
+                /*switch (event.getActionMasked()) {
+                   case MotionEvent.ACTION_DOWN:
+                        //activado evento
+
+                   case MotionEvent.ACTION_UP:
+
+                        Log.i("TAG", "touched up" );
+
+                   case MotionEvent.ACTION_MOVE:
+                       int coord= X - v.getWidth()/2;
+                       int coord2= X - v.getWidth()/2;
+                       Log.i("TAG", "fin: (" + coord + ", " + coord2 + ")");
+                   case MotionEvent.ACTION_CANCEL:}*/
+
+                return true;
             }
         });
-
     }
-
-
-
-
     }
