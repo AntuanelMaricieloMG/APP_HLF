@@ -411,16 +411,28 @@
 
     <ImageView
         android:id="@+id/piezaBarco"
-        android:layout_width="199dp"
-        android:layout_height="62dp"
+        android:layout_width="96dp"
+        android:layout_height="66dp"
         android:src="@drawable/morado"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintHorizontal_bias="0.298"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.955"
+        app:layout_constraintVertical_bias="0.954"
         tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/piezaBarcoPequeño"
+        android:layout_width="45dp"
+        android:layout_height="46dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.794"
+        app:srcCompat="@drawable/cuadrado" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
